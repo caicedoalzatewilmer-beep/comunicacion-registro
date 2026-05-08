@@ -395,6 +395,8 @@
     <footer class="py-12 text-center text-gray-400 text-sm">
         <p>2026 - By Wilmer Caicedo Alzate</p>
         <p class="mt-2 uppercase tracking-tighter">Estudiente Enfermería X semestre Universidad Santiago de Cali</p>
+        <img width="1575" height="893" alt="image (10)" src="https://github.com/user-attachments/assets/ea02e6ac-fc88-4505-8b33-03db64326b6f" />
+
     </footer>
 
     <script>
