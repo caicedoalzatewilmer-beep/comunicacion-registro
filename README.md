@@ -558,4 +558,5 @@
     - Diagram is HTML/CSS with Unicode arrows.
     - Label wrapping logic applied for labels > 16 chars.
     - Tooltip callbacks implemented for all Chart.js instances.
+   ![image alt](https://github.com/caicedoalzatewilmer-beep/comunicacion-registro/blob/b9e91e4a2467c702334fd8b5d4d36841c9ca462e/USC.png)
 -->
