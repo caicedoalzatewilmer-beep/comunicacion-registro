@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunicación y Registro Clínico - Infografía SPA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            50: '#eef0f7',
+                            100: '#dce0ef',
+                            200: '#b9c1df',
+                            600: '#394177',
+                            800: '#394177',
+                            900: '#394177',
+                        },
+                        amber: {
+                            50: '#fef9e8',
+                            200: '#fbe28c',
+                            500: '#F0C521',
+                            800: '#8a7113',
+                            900: '#715c0f',
+                        },
+                        red: {
+                            50: '#f8e9e8',
+                            500: '#AB2F24',
+                            700: '#AB2F24',
+                            800: '#7a221a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
@@ -33,7 +64,7 @@
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+            background: linear-gradient(135deg, #394177 0%, #2c325c 100%);
         }
 
         .card-shadow {
@@ -47,7 +78,7 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 1.5rem;
-            color: #3B82F6;
+            color: #F0C521;
         }
 
         @media (max-width: 768px) {
@@ -64,11 +95,10 @@
 <body class="antialiased">
 
 <!-- 
-    PALETTE CHOICE: "Vibrant Professional Blue & Energetic Amber"
-    Primary: #1E40AF (Blue 800)
-    Secondary: #F59E0B (Amber 500)
-    Accent: #10B981 (Emerald 500)
-    Neutral: #F8FAFC (Slate 50)
+    PALETTE CHOICE: "Institucional - Clínica Colombia"
+    Primary: #394177 (Dark Blue)
+    Secondary: #F0C521 (Yellow/Gold)
+    Accent: #AB2F24 (Red)
 -->
 
 <!--
@@ -90,11 +120,12 @@
     - Confidentiality Focus -> Goal: Inform -> Donut Chart (Chart.js) -> Shows proportion of focus areas.
     - NO SVG and NO MERMAID JS used in this implementation.
 -->
-        <header class="gradient-bg text-white py-16 px-4 text-center">
+
+    <header class="gradient-bg text-white py-16 px-4 text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Excelencia en la Práctica Clínica</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 mt-4">Excelencia en la Práctica Clínica</h1>
             <p class="text-xl md:text-2xl opacity-90">Guía de Comunicación Efectiva y Registro Seguro</p>
-            <div class="mt-8 inline-block bg-amber-500 text-white font-bold py-2 px-6 rounded-full shadow-lg">
+            <div class="mt-8 inline-block bg-amber-500 text-white font-bold py-2 px-6 rounded-full shadow-lg text-gray-900">
                 La seguridad del paciente comienza con tu palabra.
             </div>
         </div>
@@ -391,7 +422,7 @@
     </main>
 
     <footer class="py-12 text-center text-gray-400 text-sm">
-        <p>2026 - By Wilmer Caicedo Alzate</p>
+        <p>© 2026 - By Wilmer Caicedo Alzate</p>
         <p class="mt-2 uppercase tracking-tighter">Estudiente Enfermería X semestre Universidad Santiago de Cali</p>
     </footer>
 
@@ -423,7 +454,7 @@
                 datasets: [{
                     label: 'Impacto en Seguridad (%)',
                     data: [85, 78, 92, 88],
-                    backgroundColor: '#3B82F6',
+                    backgroundColor: '#394177',
                     borderRadius: 8
                 }]
             },
@@ -454,9 +485,9 @@
                 datasets: [{
                     label: 'Nivel Requerido',
                     data: [95, 90, 100, 85, 100],
-                    backgroundColor: 'rgba(59, 130, 246, 0.2)',
-                    borderColor: '#1E40AF',
-                    pointBackgroundColor: '#F59E0B'
+                    backgroundColor: 'rgba(57, 65, 119, 0.2)',
+                    borderColor: '#394177',
+                    pointBackgroundColor: '#F0C521'
                 }]
             },
             options: {
@@ -483,7 +514,7 @@
                 ],
                 datasets: [{
                     data: [30, 30, 20, 20],
-                    backgroundColor: ['#1E3A8A', '#3B82F6', '#F59E0B', '#10B981'],
+                    backgroundColor: ['#394177', '#AB2F24', '#F0C521', '#2c325c'],
                     borderWidth: 0
                 }]
             },
@@ -502,7 +533,7 @@
             x: [100, 80, 60, 40],
             textinfo: "label",
             marker: {
-                color: ["#F59E0B", "#FBBF24", "#FCD34D", "#FEF3C7"],
+                color: ["#394177", "#AB2F24", "#F0C521", "#e0b61b"],
                 line: { width: 0 }
             },
             connector: { line: { color: "white", width: 2 } }
